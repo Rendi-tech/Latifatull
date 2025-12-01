@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puffy Matcha</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@600&display=swap');
+
+        :root {
+            --green: #7aa883;
+            --darkgreen: #2f4636;
+            --lightgreen: #edf7ee;
+            --cream: #faf8f3;
+            --white: #ffffff;
+            --shadow: 0 6px 20px rgba(0,0,0,0.10);
+            --shadow-hover: 0 12px 28px rgba(0,0,0,0.15);
+        }
+
+        body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            background: var(--cream);
+            color: var(--darkgreen);
+        }
+
+        /* NAVBAR */
+        header {
+            background: var(--white);
+            padding: 18px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            box-shadow: var(--shadow);
+            z-index: 100;
+            border-bottom: 3px solid var(--lightgreen);
+        }
+
+        header h1 {
+            font-family: "Playfair Display", serif;
+            font-size: 28px;
+            margin: 0;
+            color: var(--darkgreen);
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            margin-left: 25px;
+            text-decoration: none;
+            font-weight: 500;
+            color: var(--green);
+        }
+
+        nav a:hover {
+            color: var(--darkgreen);
+        }
+
+        /* HERO */
+        .hero {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 60px 50px;
+            gap: 40px;
+            background: linear-gradient(140deg, var(--lightgreen), #d7ecd7);
+        }
+
+        .hero-text {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .hero-text h2 {
+            font-size: 50px;
+            font-family: "Playfair Display", serif;
+            margin: 0 0 15px;
+            color: var(--darkgreen);
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            line-height: 1.6;
+            max-width: 450px;
+            margin-bottom: 30px;
+            color: #4b6652;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: var(--green);
+            color: white;
+            font-weight: 500;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background: var(--darkgreen);
+        }
+
+        .hero-img img {
+            width: 100%;
+            max-width: 430px;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+        }
+
+        /* SECTION TITLE */
+        .section-title {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 34px;
+            font-family: "Playfair Display", serif;
+            color: var(--darkgreen);
+        }
+
+        /* MENU BUBBLE */
+        .menu-table {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 25px;
+            padding: 40px 50px;
+        }
+
+        .bubble-img {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 18px;
+            box-shadow: var(--shadow);
+            border: 2px solid var(--lightgreen);
+            text-align: center;
+            transition: 0.35s ease;
+        }
+
+        .bubble-img:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: var(--shadow-hover);
+            border-color: var(--green);
+        }
+
+        .bubble-img img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 16px;
+            margin-bottom: 12px;
+        }
+
+        .bubble-img h3 {
+            margin: 0;
+            font-size: 19px;
+            font-weight: 600;
+            color: var(--darkgreen);
+        }
+
+        .bubble-img p {
+            margin: 6px 0 0;
+            font-size: 15px;
+            color: var(--green);
+            font-weight: 500;
+        }
+
+        .desc {
+            font-size: 14px;
+            color: #5c7a63;
+            margin-top: 6px;
+            line-height: 1.4;
+        }
+
+        /* FOOTER */
+        footer {
+            background: var(--white);
+            padding: 20px;
+            margin-top: 40px;
+            text-align: center;
+            color: var(--green);
+            box-shadow: var(--shadow);
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<header>
+    <h1>Puffy Matcha</h1>
+    <nav>
+        <a href="#cakes">Kue</a>
+        <a href="#drinks">Minuman</a>
+        <a href="#contact">Kontak</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-text">
+        <h2>Kawaii Matchaa<br>Aesthetic & Adorable Matcha Picks</h2>
+        <p>
+            Matcha dengan pilihan berkualitas,dibuat untuk kamu yang mencari rasa autentik dan tampilan yang cantik  .
+        </p>
+        <a href="#cakes" class="btn">Menu Time!</a>
+    </div>
+
+    <div class="hero-img">
+        <img src="Matcha Dessert.jfif">
+    </div>
+</section>
+
+<!-- MENU KUE -->
+<h2 class="section-title" id="cakes">Matcha Dessert Cuties</h2>
+<div class="menu-table">
+
+    <div class="bubble-img">
+        <img src="Matcha cheesecake.jfif">
+        <h3>Matcha Cheesecake</h3>
+        <p>Rp 35.000</p>
+        <div class="desc">Cheesecake creamy dengan sentuhan matcha premium, lembut dan wangi.</div>
+    </div>
+
+    <div class="bubble-img">
+        <img src="Matcha Roll Cake (Swiss Roll).jfif">
+        <h3>Matcha Roll Cake</h3>
+        <p>Rp 30.000</p>
+        <div class="desc">Roll cake empuk berisi krim matcha yang manisnya pas.</div>
+    </div>
+
+    <div class="bubble-img">
+        <img src="Matcha Layer Cake Recipe_ Indulgent Green Tea Delight.jfif">
+        <h3>Matcha Chiffon Cake</h3>
+        <p>Rp 28.000</p>
+        <div class="desc">Tekstur super fluffy dengan rasa matcha lembut yang menyegarkan.</div>
+    </div>
+
+    <div class="bubble-img">
+        <img src="matcha 🍵.jfif">
+        <h3>Matcha Dorayaki</h3>
+        <p>Rp 22.000</p>
+        <div class="desc">Pancake Jepang isi krim matcha halus dan manis alami.</div>
+    </div>
+
+    <div class="bubble-img">
+        <img src="matcha green tea cupcake muffins with a light whipped topping and matcha powder.jfif">
+        <h3>Matcha Muffin</h3>
+        <p>Rp 18.000</p>
+        <div class="desc">Muffin lembut dengan aroma matcha khas dan topping crunchy.</div>
+    </div>
+
+    <div class="bubble-img">
+        <img src="download (2).jfif">
+        <h3>Matcha Tart Mini</h3>
+        <p>Rp 20.000</p>
+        <div class="desc">Tart mini dengan isian krim matcha yang creamy dan ringan.</div>
+    </div>
+
+</div>
+
+<!-- MENU MINUMAN -->
+<h2 class="section-title" id="drinks">Cute Matcha Drinks</h2>
+<div class="menu-table">
+
+    <div class="bubble-img">
+        <img src="Iced Matcha Latte Recipe.jfif">
+        <h3>Iced Matcha Latte</h3>
+        <p>Rp 25.000</p>
+        <div class="desc">Matcha latte dingin yang creamy dan menyegarkan.</div>
+    </div>
+
+    <div class="bubble-img">
+        <img src="Creamy Matcha Latte Recipe.jfif">
+        <h3>Warm Matcha Latte</h3>
+        <p>Rp 23.000</p>
+        <div class="desc">Hangat & menenangkan, cocok diminum saat santai.</div>
+    </div>
+
+    <div class="bubble-img">
+        <img src="Iced Vanilla Matcha Latte – Best Taste, Benefits & Recipe.jfif">
+        <h3>Matcha Milk Tea</h3>
+        <p>Rp 24.000</p>
+        <div class="desc">Matcha berpadu teh susu yang creamy dan nikmat.</div>
+    </div>
+
+    <div class="bubble-img">
+        <img src="Cookies & Cream Matcha Frappe_ Easy DIY Recipe!.jfif">
+        <h3>Matcha Frappe</h3>
+        <p>Rp 28.000</p>
+        <div class="desc">Es blend matcha lembut dengan tekstur creamy.</div>
+    </div>
+
+    <div class="bubble-img">
+        <img src="Home Cafe - Matcha Yakult.jfif">
+        <h3>Matcha Yakult</h3>
+        <p>Rp 22.000</p>
+        <div class="desc">Segar, asam manis, unik dan menyegarkan.</div>
+    </div>
+
+    <div class="bubble-img">
+        <img src="matcha float.jfif">
+        <h3>Matcha Float</h3>
+        <p>Rp 27.000</p>
+        <div class="desc">Matcha latte dengan es krim lembut di atasnya.</div>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer id="contact">
+    <p>LATIFATUL MUNAWAROH MACTHAHOLIC  ABSEN 23 Instagram: @matchadelights</p>
+</footer>
+
+</body>
+</html>
